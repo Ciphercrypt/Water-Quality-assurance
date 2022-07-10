@@ -7,7 +7,6 @@ import FAQ from 'components/faqs/TwoColumnPrimaryBackground.js';
 import Footer from 'components/footers/FiveColumnDark.js';
 import Endata from 'languages/en.js';
 import Hndata from 'languages/hn.js';
-
 import NewHeader from 'components/hero/Onlyheader';
 
 export default () => {
@@ -16,7 +15,7 @@ export default () => {
 
   return (
     <AnimationRevealPage>
-     
+  
       {en1 && (
         <div>
           <NewHeader
@@ -78,9 +77,13 @@ export default () => {
       )}
 
       {hn1 && (
+        <>
         <div>
           <Hero heroDescription={Hndata.heroDescription} heroTitle={Hndata.heroTitle} />
         </div>
+
+     
+        </>
       )}
       {hn1 && (
         <div>
