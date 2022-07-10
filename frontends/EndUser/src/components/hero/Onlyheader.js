@@ -10,7 +10,6 @@ import HeaderBase, {
 import { Container as ContainerBase, ContentWithVerticalPadding, Content2Xl } from "components/misc/Layouts.js";
 import { SectionHeading } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
-import NewHeader from "components/hero/Onlyheader";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import logoImageSrc from "images/buzzlogo.png";
 import serverIllustrationImageSrc from "images/server-illustration-2.svg";
@@ -69,9 +68,7 @@ export default ({
   const navLinks = [
     <NavLinks key={1}>
       {/* <NavLink href="/blog">{blog}</NavLink> */}
-      <NavLink href="http://192.168.0.239/" target="_blank">{nlpbot}</NavLink>
-      <NavLink href="/MS-code-to-give/humanoid">{human}</NavLink>
-      <NavLink href="https://creator.us.uneeq.io/try/e3f2ea5b-c8c1-4c20-9845-e545687cf40a" target="_blank">{threed}</NavLink>
+     
 
       <PrimaryLink onClick={onClickBtn1} >English</PrimaryLink>
       <PrimaryLink  onClick={onClickBtn2} style={{backgroundColor:'green'}}>Hindi</PrimaryLink>

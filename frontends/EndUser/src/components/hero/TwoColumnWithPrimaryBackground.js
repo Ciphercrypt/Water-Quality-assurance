@@ -32,10 +32,10 @@ const Image = tw.img`w-144 ml-auto`
 
 export default ({
   heroDescription,
-  heading = "BUZZ WOMEN",
+  heading = "Water Quality Control",
   heroTitle,
-  description = "Buzz Women is the global movement by and for women. We bring transformation within reach. And enable women to ignite their personal and collective power.",
-  primaryButtonText = "Start Your 15 Day Free Trial",
+  description = "Water Quality Control",
+  primaryButtonText = "",
   primaryButtonUrl = "#",
   // imageSrc = "https://static.vecteezy.com/system/resources/thumbnails/001/413/580/small/woman-empowerment-awareness-concept-free-vector.jpg",
   imageSrc = "https://static.vecteezy.com/system/resources/thumbnails/001/825/408/small_2x/happy-friendship-day-young-group-women-unity-relationship-special-event-celebration-free-vector.jpg",

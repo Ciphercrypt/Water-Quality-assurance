@@ -1,19 +1,19 @@
 const Endata ={
 
     
-    "heroTitle":"BUZZ-WOMEN",
-    "heroDescription":"Buzz Women is the global movement by and for women. We bring transformation within reach. And enable women to ignite their personal and collective power.",
-     "heading": "Amazing Features",
+    "heroTitle":"Water Quality Control",
+    "heroDescription":"pony possible plates world spoken total require grow leg ants neighborhood exact water detail tin hide moment well difference basket valley vegetable likely yard",
+     "heading": "Provided Features",
      "Descriptionb":[
-        "Our english bot will guide you on business you are interested in  and  solve all your confusions so that you can start your business." , 
-        "Hindi bot will guide you on business you are interested in Hindi language and solve all your confusions so that you can start your business.This can be used by illiterate people to communicate with our services.",
-        "Many-a-times we cannot get our queries clarified by some virtual bots. So, this page is for human interaction. You can talk directly with our volunteers through the chatbot.",
-        "You can talk to a virtual human which will enhance your overall counselling experience. You will feel as if you are interacting with a real human.",
-        "You can call us on +1 860-295-3477 and talk with our bot to clarify your queries. This feature will help people who do not have access to internet.",
-        "We have seen the usage of bots on social media on a vast level. So, the Stree Bot can also interact with you on your favorite social media platform.You can talk with us on Telegram using the chatbots: Type 'Telegram' on the bot."
+        "dry bag grabbed that anyone changing accident examine fully became herself pony tonight during obtain mouse either quiet entirely bow knew citizen gravity when" , 
+        "season hunt grandmother struck war rising stand nature owner differ science film held shelf satisfied lying wife fog second explore thy graph dull save",
+        "which particular teach pencil running path present anything soap grandfather harbor step however next tobacco finally honor agree pupil temperature him corner memory book",
+        "post scientific fox needle accept nothing fence front they this call those wall battle sharp composed bite men also truth jump iron audience brick",
+        "completely grown direction ship teach early everywhere settlers stronger lift gray carry depth government several call grow her fresh myself share add forgot home",
+        "too struggle suppose ruler produce swung so industrial anybody spite certainly contain attention rough market have article tone apart rhythm rose symbol settle made"
      ],
      "Headingb":[
-        "English Bot" , "Hindi Bot" , "Humanoid Bot" , "3D Human support" ,"Telephonic support","Social Media Support"
+        "feature 1" , "feature 2" , "feature 3" , "feature 4" ,"feature 5","feature 6"
      ],
      "headingt" : "Blogs",
      "descriptiont" : "Inspiration & Impact",
@@ -50,7 +50,7 @@ const Endata ={
      "faq":"FAQs",
      "human":"Humanoid",
      "threed":"3D Bot",
-     "buzz":"Buzz Women",
+     "buzz":"Water Qauality Control",
      "address":"INDIA #111, 11th Main Road, 15th Cross, Malleshwaram Bangalore–560003",
      "contact":"Contact",
      "nlpbot":"FAQ-bot"
