@@ -3,7 +3,7 @@ const Endata ={
     
     "heroTitle":"Water Quality Control ",
     "heroDescription":"pony possible plates world spoken total require grow leg ants neighborhood exact water detail tin hide moment well difference basket valley vegetable likely yard",
-     "heading": "Provided Features",
+      "heading": "Provided Features",
      "Descriptionb":[
         "In this Website, We have implemented the ML model which analyze the attributes of water and gives a result about the PH, turbidity and drinkability of water." , 
         "We have used different sensors such as PH sensor and rasberry pi to get realtime water's attribute.",

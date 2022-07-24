@@ -5,6 +5,8 @@ const dotenv = require('dotenv');
 dotenv.config()
 
 const userRoutes=require('./routes/UserRoutes');
+const tapRoutes=require('./routes/TapRoutes');
+
 
 var jsonParser = bodyParser.json();
 var urlEncoded = bodyParser.urlencoded({ extended: true });
@@ -19,6 +21,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 let _response = {};
     
 app.use('/api/user', userRoutes);
+app.use('/api/tap', tapRoutes);
+
 
 app.use((req, res, next) => {
     const error = new Error('INVALID ROUTE')
