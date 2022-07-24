@@ -5,12 +5,12 @@ const Endata ={
     "heroDescription":"pony possible plates world spoken total require grow leg ants neighborhood exact water detail tin hide moment well difference basket valley vegetable likely yard",
      "heading": "Provided Features",
      "Descriptionb":[
-        "dry bag grabbed that anyone changing accident examine fully became herself pony tonight during obtain mouse either quiet entirely bow knew citizen gravity when" , 
-        "season hunt grandmother struck war rising stand nature owner differ science film held shelf satisfied lying wife fog second explore thy graph dull save",
-        "which particular teach pencil running path present anything soap grandfather harbor step however next tobacco finally honor agree pupil temperature him corner memory book",
-        "post scientific fox needle accept nothing fence front they this call those wall battle sharp composed bite men also truth jump iron audience brick",
-        "completely grown direction ship teach early everywhere settlers stronger lift gray carry depth government several call grow her fresh myself share add forgot home",
-        "too struggle suppose ruler produce swung so industrial anybody spite certainly contain attention rough market have article tone apart rhythm rose symbol settle made"
+        "In this Website, We have implemented the ML model which analyze the attributes of water and gives a result about the PH, turbidity and drinkability of water." , 
+        "We have used different sensors such as PH sensor and rasberry pi to get realtime water's attribute.",
+        "We have a build our ML model on 10000 different water samples, and it gives 80% accuracy. Our testing accuracy is about 82%.",
+        "We have installed our instrument at water taps, so user can scan a QR code and get information about PH, turbidity, visibity, drickablity and many more..",
+        "When user scan a QR code, then our instrument send a realtime data to our ML model, Where data gets analyze by the model and according that result is shown on the screen.",
+        "On the screen, user gets water's attribute, location, last time checks and many more.."
      ],
      "Headingb":[
         "feature 1" , "feature 2" , "feature 3" , "feature 4" ,"feature 5","feature 6"
@@ -30,20 +30,20 @@ const Endata ={
      ],
      "headingf":"Frequently Asked Questions",
      "questions":[
-        "How can I contact buzz women?",
-        "Can I know about Buzz women?",
-        "Is any kind of financial help done by buzz women?",
-        "How can i get information of various business schemes?",
-        "How can i grow my business? ",
-        "Can I  get business loan in village?"
+        "How can I get PH of the water?",
+        "Can I know the water is drinkable or not?",
+        "Is this service available at any water tap?",
+        "How can I get information of various water causing disease of particular water sample at water tap?",
+        "How can I get this instrument?",
+        "Where will be this instrument will useful?"
      ],
      "answer":[
-        "You can send a mail to `ask@buzzwomen.org` ",
-        "Buzz Women is the global movement by and for women. We bring transformation within reach and enable women to ignite their personal and collective power.",
-        "Buzz women does not provide any cash or financial help , we will help you by mentoring you and provide enough knowledge so that you can take your decisions and start business.",
-        "Here are some schemes provided by the government: Mudra Loan for Women, Annapurna Scheme, Stree Shakti Yojana, Dena Shakti Scheme",
-        "Hire the right people , Focus on established revenue sources , Reduce your risks , Be adaptable , Focus on your customer experience ,Invest in yourself ,Always think ahead , Research your competitors.",
-        "Yes, you can apply for getting a business loan from any bank in your area."
+        "You just have to scan the QR code and it will give the PH of water.",
+        "Yes, You just have to scan the QR Code.",
+        "Not yet, But we are working on it.",
+        "When user scan the QR code, then our ML model analyze the water sample and it's show the results according to water sample.",
+        "Sorry, this instrument is not available in market yet, But we are working on it.",
+        "This is useful at many places, such as public water taps, school, offices etc to check water is drinkable or not."
      ],
      "links":"Quick Links",
      "blog":"Blog",

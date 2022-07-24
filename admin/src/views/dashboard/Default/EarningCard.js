@@ -11,6 +11,7 @@ import SkeletonEarningCard from 'ui-component/cards/Skeleton/EarningCard';
 
 // assets
 import EarningIcon from 'assets/images/icons/earning.svg';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import GetAppTwoToneIcon from '@mui/icons-material/GetAppOutlined';
@@ -79,7 +80,7 @@ const EarningCard = ({ isLoading }) => {
                         <Grid container direction="column">
                             <Grid item>
                                 <Grid container justifyContent="space-between">
-                                    <Grid item>
+                                    {/* <Grid item>
                                         <Avatar
                                             variant="rounded"
                                             sx={{
@@ -91,6 +92,10 @@ const EarningCard = ({ isLoading }) => {
                                         >
                                             <img src={EarningIcon} alt="Notification" />
                                         </Avatar>
+                                    </Grid> */}
+                                    <Grid item>
+                                        <PeopleAltIcon></PeopleAltIcon>
+                                        {/* <svg data-testid="PeopleAltIcon"></svg> */}
                                     </Grid>
                                     <Grid item>
                                         <Avatar
@@ -169,7 +174,7 @@ const EarningCard = ({ isLoading }) => {
                                         color: theme.palette.secondary[200]
                                     }}
                                 >
-                                    Total Earning
+                                    Total Number of Users
                                 </Typography>
                             </Grid>
                         </Grid>
