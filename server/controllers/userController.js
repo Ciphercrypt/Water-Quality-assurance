@@ -1,11 +1,6 @@
 const bCrypt = require("bcrypt");
 
-// const {
-//   ValidateUserLogin,
-//   validateUserRegisterDetails,
-// } = require("../validation/");
 
- //validator import for checking inputs
 const ValidateUserLogin=require('../validation/UserLogin');
 const validateUserRegisterDetails=require('../validation/UserRegister');
 

@@ -3,7 +3,7 @@ const Endata ={
     
     "heroTitle":"Water Quality Control ",
     "heroDescription":"pony possible plates world spoken total require grow leg ants neighborhood exact water detail tin hide moment well difference basket valley vegetable likely yard",
-     "heading": "Provided Features",
+      "heading": "Provided Features",
      "Descriptionb":[
         "dry bag grabbed that anyone changing accident examine fully became herself pony tonight during obtain mouse either quiet entirely bow knew citizen gravity when" , 
         "season hunt grandmother struck war rising stand nature owner differ science film held shelf satisfied lying wife fog second explore thy graph dull save",
