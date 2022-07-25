@@ -1,6 +1,8 @@
 import React ,{useState} from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 //eslint-disable-next-line
 import { css } from 'styled-components/macro';
 import Qr from './Qr';
@@ -48,6 +50,7 @@ const Orstyle = {
   fontSize: 30,
   marginTop: 50,
 };
+
 const CustomersLogoStrip = styled.div`
   ${tw`mt-12 lg:mt-20`}
   p {
@@ -58,10 +61,73 @@ const CustomersLogoStrip = styled.div`
   }
 `;
 
+// function TapDetailModel() {
+//   const [show, setShow] = useState(false);
+
+//   const handleClose = () => setShow(false);
+//   const handleShow = () => setShow(true);
+
+//   return (
+//     <>
+//       <Button variant="primary" onClick={handleShow}>
+//         Launch demo modal
+//       </Button>
+
+//       <Modal show={show} onHide={handleClose}>
+//         <Modal.Header closeButton>
+//           <Modal.Title>Modal heading</Modal.Title>
+//         </Modal.Header>
+//         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+//         <Modal.Footer>
+//           <Button variant="secondary" onClick={handleClose}>
+//             Close
+//           </Button>
+//           <Button variant="primary" onClick={handleClose}>
+//             Save Changes
+//           </Button>
+//         </Modal.Footer>
+//       </Modal>
+
+//     </>
+//   );
+// }
+
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Modal heading
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Centered Modal</h4>
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
 export default ({
   roundedHeaderButton,
 
 }) => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const [qrcamera,setqrcamera]=useState(false);
   const [qrbuttontext,setqrbuttontext]=useState('Scan the Qr Code');
 
@@ -80,8 +146,26 @@ export default ({
   }
   return (
     <>
+    
       <Header roundedHeaderButton={roundedHeaderButton} />
-      <Container>
+      {/* <>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </> */}
+    <>
+    <Container>
         <TwoColumn>
           <LeftColumn>
             <Heading>
@@ -89,8 +173,12 @@ export default ({
             </Heading>
             <Paragraph>Just Enter the code given on the tap or scan the QR code</Paragraph>
             <Actions>
-              <input type="text" placeholder="Enter Tap ID" />
-              <button>Get Started</button>
+              <input type="text" placeholder="Enter Tap ID"  />
+              <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
+              <button onClick={handleShow}>Get Started</button>
             </Actions>
             <p style={Orstyle}>Or</p>
 
@@ -119,6 +207,7 @@ export default ({
         </TwoColumn>
         <DecoratorBlob1 />
       </Container>
+    </>      
     </>
   );
 };

@@ -91,6 +91,9 @@ export default ({
               <LinkListItem>
                 <Link href="/3d">{threed}</Link>
               </LinkListItem>
+              {/* <LinkListItem>
+                <Link href="/3d">Create QRCode</Link>
+              </LinkListItem> */}
             </LinkList>
           </Column>
           <Column>
