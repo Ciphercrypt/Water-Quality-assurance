@@ -31,15 +31,13 @@
 // })
 
 import QRCode from 'qrcode'
-import { TextField, Button } from '@mui/material'
 import { useState } from 'react'
 
-function UIColor() {
+function QRCodeGenerator() {
 	const [url, setUrl] = useState('')
 	const [qr, setQr] = useState('')
 
 	const GenerateQRCode = () => {
-        console.log("CALLED", qr)
 		QRCode.toDataURL(url, {
 			width: 800,
 			margin: 2,
@@ -57,34 +55,26 @@ function UIColor() {
 
 	return (
 		<div className="app">
-			<h1 sx={{paddingBottom: '10px'}}>QR Generator</h1>
-            <TextField
-            id="standard-basic"
-            label="Enter Tap ID"
-            value={url}
-            variant='standard'
-            sx={{paddingRight:'10px'}}
-            onChange={e => setUrl(e.target.value)}
-            />
-            <Button variant="contained" sx={{paddingTop:'10px', marginTop:'5px'}} onClick={GenerateQRCode}>Generate</Button>
+			<h1>QR Generator</h1>
+			<input 
+				type="text"
+				placeholder="e.g. https://google.com"
+				value={url}
+				onChange={e => setUrl(e.target.value)} />
+			<button onClick={GenerateQRCode}>Generate</button>
             <br/>
-            <br/>
-            <br/>
-            {qr && <>
+            {/* {
+                qr != '' ? <img src={qr} /> : ''
+            } */}
+			{qr && <>
 				<div>
-                    <img src={qr} width="200px"/>
+                    <img src={qr} sx={{width:1/2}}/>
                 </div>
-                <br/>
-            <br/>
+                
 				<a href={qr} download="qrcode.png">Download</a>
 			</>}
-            <br/>
-            
-            
-
 		</div>
 	)
 }
 
-// export default QRCodeGenerator;
-export default UIColor;
+export default QRCodeGenerator;
